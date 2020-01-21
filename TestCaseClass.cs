@@ -22,7 +22,11 @@ namespace NUnit.ListCollectionTests
             }
             testCollectionClone.RemoveAll(x => x > predict);
 
-            Assert.That(testCollectionClone, Is.EquivalentTo(testCollection));
+            Assert.That(testCollectionClone, Is.EquivalentTo(testCollection), "Testing colection and cloned collection are not equavalented");
+            foreach (var item in testCollection)
+            {
+                Assert.That(item, Is.AtMost(predict), $"Predicat for .RemoveAll() method was : element shouldn't be larger, then {predict}. Element {item} is more then {predict}.");
+            }
         }
     }
 }
