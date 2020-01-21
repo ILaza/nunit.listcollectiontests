@@ -62,7 +62,7 @@ namespace NUnit.ListCollectionTests
                 Assert.That((countOfRangCollection <= countOfTestCollection), Is.True, $"Amount of elements of range is not less than or equal to amount of whole collection");
                 Assert.That(rangCollection, Is.SubsetOf(testCollection), $"Result of .GetRange() method is not subset of testing collection"); 
             }
-           );
+            );
         }
 
         [OneTimeTearDown]
@@ -71,7 +71,6 @@ namespace NUnit.ListCollectionTests
             try
             {
                 testCollection.Clear();
-
             }
             catch (NullReferenceException ex)
             {
