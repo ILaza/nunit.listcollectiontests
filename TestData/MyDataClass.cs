@@ -34,6 +34,5 @@ namespace NUnit.ListCollectionTests
             argumentsForGetRangeMethod[1] = count / 2;
             return testCollection;
         }
-
     }
 }

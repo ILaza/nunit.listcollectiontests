@@ -9,6 +9,8 @@ namespace NUnit.ListCollectionTests
     {
         private List<int> testCollection;
         private int predict;
+        public List<int> argumentForExceptions;
+
 
         public TestFixtureClass(List<int> testCollection, int predict)
         {

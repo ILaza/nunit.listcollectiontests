@@ -19,5 +19,7 @@ namespace NUnit.ListCollectionTests.TestData
         }
 
         public static int predictForRemoveAll = 5;
+
+        public static List<int> argumentForExceptions = null;
     }
 }
