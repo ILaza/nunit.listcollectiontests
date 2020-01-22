@@ -42,8 +42,10 @@
   <ItemGroup>
     <Compile Include="TestData\MyDataClass.cs" />
     <Compile Include="TestClass.cs" />
-    <Compile Include="TestClassAttribute.cs" />
+    <Compile Include="TestCaseClass.cs" />
     <Compile Include="TestData\TestCaseDataClass.cs" />
+    <Compile Include="TestData\TestFixtureDataClass.cs" />
+    <Compile Include="TestFixtureClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

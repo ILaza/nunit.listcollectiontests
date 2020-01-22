@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using NUnit.ListCollectionTests.TestData;
+using System;
 using System.Collections.Generic;
 
 namespace NUnit.ListCollectionTests
@@ -55,5 +56,12 @@ namespace NUnit.ListCollectionTests
 
             Assert.That(testCollectionClone, Is.EquivalentTo(testCollection), "Testing colection and cloned collection are not equavalented");
         }
+
+        [Test]
+        public void ExeptedExceptionTest()
+        {
+            Assert.That(RemoveAllTestFixture, Throws.Exception.TypeOf<ArgumentNullException>());
+        }
+
     }
 }
