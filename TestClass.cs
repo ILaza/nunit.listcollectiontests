@@ -41,6 +41,8 @@ namespace NUnit.ListCollectionTests
         public void CountOfCollection()
         {
             int count = 0;
+            testCollection = null;
+            Assume.That(testCollection, Is.Not.Null);
             foreach (var item in testCollection)
             {
                 count++;

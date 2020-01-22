@@ -22,6 +22,7 @@ namespace NUnit.ListCollectionTests
             }
             testCollectionClone.RemoveAll(x => x > predict);
 
+            Assume.That(testCollection, Is.Not.Null);
             Assert.That(testCollectionClone, Is.EquivalentTo(testCollection), "Testing colection and cloned collection are not equavalented");
             foreach (var item in testCollection)
             {

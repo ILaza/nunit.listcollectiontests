@@ -60,7 +60,7 @@ namespace NUnit.ListCollectionTests
         [Test]
         public void ExeptedExceptionTest()
         {
-            Assert.That(RemoveAllTestFixture, Throws.Exception.TypeOf<ArgumentNullException>());
+            Assert.That(RemoveAllTestFixture, Throws.Exception.TypeOf<ArgumentNullException>(), $"No <ArgumentNullException> was thrown in method RemoveAllTestFixture");
         }
 
     }
